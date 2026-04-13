@@ -3,7 +3,12 @@ public class CompteBancaire {
     private String nom;
     public CompteBancaire(String nom){
         solde=0;
-        this.nom=nom;
+        if(nom!=""){
+            this.nom=nom;
+        }
+        else{
+            System.out.println("Veuillez saisir un nom.");
+        }
 
     }
 
@@ -19,10 +24,5 @@ public class CompteBancaire {
         }
 
     }
-
-    public String getNom(){
-        return nom;
-    }
-
 
 }
