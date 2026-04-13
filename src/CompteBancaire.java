@@ -25,4 +25,9 @@ public class CompteBancaire {
 
     }
 
+    public String getNom(){
+        return nom;
+    }
+
+
 }
